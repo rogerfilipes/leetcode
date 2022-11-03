@@ -1,4 +1,4 @@
-package productarrayexceptself;
+package leetcode.productarrayexceptself;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package productarrayexceptself;
+package leetcode.productarrayexceptself;
 
 /**
  * 238. Product of Array Except Self <a href="https://leetcode.com/problems/product-of-array-except-self/"/>
@@ -9,7 +9,7 @@ package productarrayexceptself;
  * <p>
  * You must write an algorithm that runs in O(n) time and without using the division operation.
  */
-class Solution {
+public class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] result = new int[n];
