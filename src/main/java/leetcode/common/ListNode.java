@@ -1,7 +1,5 @@
 package leetcode.common;
 
-import leetcode.lc0206_reverselinkedlist.Solution;
-
 public class ListNode {
     public int val;
     public ListNode next;
