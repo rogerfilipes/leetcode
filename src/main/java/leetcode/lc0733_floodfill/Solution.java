@@ -15,19 +15,18 @@ public class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
 
         int original = image[sr][sc];
-        paint(image, original, color, sr, sc);
+        if (image[sr][sc] != color)
+            paint(image, original, color, sr, sc);
         return image;
     }
 
     private void paint(int[][] image, int original, int target, int x, int y) {
 
-        if (x < 0 || y < 0 || x >= image.length || y >= image.length)
-            return;
-
-        if (image[x][y] != original)
+        if (x < 0 || y < 0 || x >= image.length || y >= image[0].length || image[x][y] != original)
             return;
 
         image[x][y] = target;
+
         paint(image, original, target, x - 1, y);
         paint(image, original, target, x + 1, y);
         paint(image, original, target, x, y - 1);

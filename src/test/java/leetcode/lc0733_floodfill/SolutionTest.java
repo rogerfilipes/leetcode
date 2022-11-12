@@ -23,4 +23,21 @@ class SolutionTest {
 
         assertArrayEquals(expected, output);
     }
+
+    @Test
+    void example2() {
+        int[][] image = {
+                {0,0,0},
+                {0,0,0}
+        };
+        int sr = 0, sc = 0, color = 0;
+        int[][] expected = {
+                {0,0,0},
+                {0,0,0}
+        };
+
+        int[][] output = new Solution().floodFill(image, sr, sc, color);
+
+        assertArrayEquals(expected, output);
+    }
 }
